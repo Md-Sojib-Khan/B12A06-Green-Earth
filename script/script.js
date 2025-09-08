@@ -72,7 +72,7 @@ const displayCards = (datas) => {
        <div id="${data.id}" class="bg-white p-2 rounded-xl h-fit">
                     <img class="h-[200px] w-full rounded-lg object-cover" src="${data.image}" alt="">
                     <h3 onclick="showModal('${data.id}')" class="font-semibold my-1 cursor-pointer">${data.name}</h3>
-                    <p class="text-xs">${data.description}</p>
+                    <p class="text-xs md:h-12 overflow-hidden">${data.description}</p>
                     <div class="flex justify-between items-center my-2">
                         <button class="bg-[#DCFCE7] text-[#15803D] text-sm font-medium rounded-full px-3 py-1 items-center">${data.category}</button>
                         <p><span><i class="fa-solid fa-bangladeshi-taka-sign"></i></span><span class="font-bold">${data.price}</span></p>
